@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+background-image: linear-gradient(62deg, #B79891 0%, #94716B 100%);
+
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    /* height: 100vh; */
+    /* background: slateblue; */
+}
+
+.wrapper{
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    margin: auto ;
+    margin-top: 100px;
+    padding: 40px 40px 60px;
+    border-radius: 8px;
+}
+
+.box{
+    display: flex;
+    gap: 15px;
+}
+
+.box h1{
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(23, 34, 55);
+}
+
+.box svg{
+    height: 27px;
+    width: 27px;
+    margin-top: 4px;
+}
+
+.inputBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    background-color: #edeef0;
+    padding-left: 10px;
+}
+
+.inputBox input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 0.9rem;
+}
+
+.inputBox button{
+    background-color:  #d75b53 ;
+    padding: 10px 35px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+}
+
+.inputBox button:hover{
+    background-color:  #ce2b1f ;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.tasks{
+    margin-top: 20px;
+}
+
+ul li{
+    list-style-type: none;
+    padding-left: 35px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+    position: relative;
+}
+
+ul li::before{
+    content: "";
+    position: absolute;
+    top:1.8px;
+    left: 8px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1.5px solid rgba(0, 0, 0, 0.24);
+    background: rgba(128, 128, 128, 0.058);
+}
+
+ul li.checked{
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-left: -2px;
+    background: url(check.png);
+    background-size: contain;
+    background-position: center;
+    border: none;
+}
+
+ul li span{
+    /* font-size: 1rem ; */
+    position: absolute;
+    right: 0;
+    margin-right: 7px;
+    color: red;
+    font-size: 1.2rem;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+ul li span:hover{
+    background-color: rgba(179, 186, 193, 0.278);
+    /* padding: 5px; */
+}
+
+.note{
+    color: red;
+    font-size: 12px;
+    padding-left: 7px;
+    margin-top: 2px;
+}
