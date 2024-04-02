@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <div class="wrapper w-[100%] h-[100vh] bg-[#161616] flex justify-center items-center mx-auto"> 
+        <div class="container mx-auto max-w-[480px]">
+            <h1 class="text-white text-[1.8rem] font-semibold leading-[2.8rem]">Generate a <br> 
+                <span class="text-yellow-500 font-bold border-b-2 border-yellow-500">Random Password</span>
+            </h1>
+
+            <div class="display flex justify-between items-center px-4 w-full bg-white p-3 mt-[3rem] rounded-sm">
+                <input type="text" placeholder="Password" id="passwordBox" class="text-[21px] outline-0 border-0 w-[95%]">
+                <svg onClick="copy()" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-copy text-[#161616] w-7 h-7 p-[4px] hover:cursor-pointer" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
+                </svg>
+                
+            </div>
+
+            <button id="btn" onClick="generatePassword()" class="w-[40%] bg-yellow-500 text-white font-semibold p-2 border-2 border-yellow-500 hover:text-yellow-500 hover:bg-[#161616] transition duration-300 ease rounded-sm mt-6">Generate Password</button>
+        </div>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
