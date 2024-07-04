@@ -21,9 +21,17 @@ function findlongestword(inputString) {
   let words = inputString.split(" ");
   //   console.log(words);
 
-  words.sort((a, b) => a.length - b.length); // sorts in ascending order of length , for descending : b.length-a.length
-  console.log(words);
-  return words.at(-1); // The 'at' method accesses an element at the specified index.
+  //   ------------------------ way 1 -------------------------
+  //   words.sort((a, b) => a.length - b.length); // sorts in ascending order of length , for descending : b.length-a.length
+  //   console.log(words);
+  //   return words.at(-1); // The 'at' method accesses an element at the specified index.
+
+  //   ------------------------ way 2 -------------------------
+  let longWord = words.reduce(
+    (acc, currWord) => (currWord.length > acc.length ? currWord : acc),
+    ""
+  );
+  return longWord;
 }
 
 console.log(findlongestword("helloya my name is VaishnaviShelke"));
