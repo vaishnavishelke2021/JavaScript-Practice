@@ -15,12 +15,23 @@ function countChar(str, char) {
   char = char.toLowerCase();
 
   strArr = str.split("");
-  count = strArr.reduce((acc, curr) => {
-    if (curr === char) {
-      acc++;
+
+  //   -------------------------------way 1-----------------------------------
+  //   count = strArr.reduce((acc, curr) => {
+  //     if (curr === char) {
+  //       acc++;
+  //     }
+  //     return acc;
+  //   }, 0);
+
+  //   -------------------------------way 2-----------------------------------
+  count = 0;
+  for (let c of strArr) {
+    if (c === char) {
+      count++;
     }
-    return acc;
-  }, 0);
+  }
+
   return count;
 }
 
