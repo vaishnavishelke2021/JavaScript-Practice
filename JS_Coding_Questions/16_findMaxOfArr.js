@@ -15,8 +15,7 @@
 
 function findMin(arr) {
   //! ------------------------way 1----------------------------
-  return arr.length === 0 ? "Empty Array" : Math.min(...arr);
-
+  //   return arr.length === 0 ? "Empty Array" : Math.min(...arr);
   //!-------------------------way 2----------------------------
   //   let min = arr[0];
   //   for (let curr of arr) {
@@ -25,7 +24,6 @@ function findMin(arr) {
   //     }
   //   }
   //   return min;
-
   //!-------------------------way 3----------------------------
   //   if (arr.length === 0) return "Empty Array";
   //   return arr.reduce((acc, min) => {
@@ -34,6 +32,10 @@ function findMin(arr) {
   //     }
   //     return min;
   //   }, arr[0]);
+
+  //!---------------------------way 4---------------------------
+  let min = arr.sort((a, b) => a - b);
+  return arr.length === 0 ? "Empty Array" : min[0];
 }
 
 console.log(findMin([5, 10, 2, 8])); // Output: 2
