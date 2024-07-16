@@ -30,3 +30,11 @@ function toCamelCase(inp) {
 }
 
 console.log(toCamelCase("hello world")); // Output: helloWorld
+
+//todo ----------------------------------------------------------------------------------------------------------------
+
+function toSnakeCase(inp) {
+  return inp.toLowerCase().split(" ").join("_");
+}
+
+console.log(toSnakeCase("hello World how yoU dOin"));
