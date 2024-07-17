@@ -25,3 +25,16 @@ function isUpperCase(char) {
 }
 
 console.log(isUpperCase("S"));
+
+function isLowerCase(char) {
+  //! way 1
+  //   if (char.charCodeAt(0) >= 97 && char.charCodeAt(0) <= 122) {
+  //     return true;
+  //   }
+  //   return false;
+
+  //! way 2
+  return char === char.toLowerCase();
+}
+
+console.log(isLowerCase("v"));
