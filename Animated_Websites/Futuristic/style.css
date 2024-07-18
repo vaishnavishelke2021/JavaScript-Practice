@@ -1,14 +1,73 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 html,
 body {
   height: 100%;
   width: 100%;
+  background-color: #131313;
+  color: #f4f4f4;
+}
+
+::selection {
+  background: #367c1f;
+  color: whitesmoke;
+  padding: 1px 4px;
+}
+
+#page1 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#page1 h1 {
+  font-size: 14vh;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 0.9;
+  letter-spacing: -1px;
+}
+
+#page1 svg {
+  background-color: #367c1f;
+  color: #f4f4f4;
+  border-radius: 50%;
+  height: 10vh;
+  padding: 12px;
+  width: 4.8vw;
+}
+
+#page1 p {
+  margin-top: 4vh;
+  line-height: 1.5;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #f6f6f6;
+}
+
+#page1-expertise {
+  display: flex;
+  margin-top: 1vh;
+  font-size: 0.9rem;
+  font-weight: 400;
+  align-items: center;
+}
+
+#page1-expertise p{
+    border: 1px solid #f6f6f648;
+    border-radius: 20px;
+    padding: 2px 9px;
+    margin: 2px;
+    font-size: 0.9rem;
 }
