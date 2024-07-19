@@ -112,3 +112,18 @@ body {
 #img2 {
   rotate: 10deg;
 }
+
+/* --------------------------------------footer ---------------------------------------- */
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px 80px;
+  position: absolute;
+  bottom: 0;
+  text-transform: uppercase;
+  font-weight: 200;
+  color: #f6f6f6cf;
+}

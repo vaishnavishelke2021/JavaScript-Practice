@@ -26,3 +26,10 @@ tl.from("#header img", {
   rotate: 40,
   stagger: 0.3,
 });
+
+tl.from("footer p", {
+  y: -10,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.3,
+});
