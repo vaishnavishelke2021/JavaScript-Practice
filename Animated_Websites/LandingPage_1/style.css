@@ -27,7 +27,7 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  padding: 20px 60px;
+  padding: 20px 80px;
 }
 
 #main nav h2 {
@@ -43,10 +43,16 @@ body {
 }
 
 #main nav ul li {
-  margin-right: 20px;
+  margin-right: 25px;
   font-size: 1.1rem;
   font-weight: 300;
   letter-spacing: 1px;
+  color: #f6f6f6cf;
+  cursor: pointer;
+}
+#main nav ul li:hover {
+  color: #f6f6f6;
+  transition: all 0.2s;
 }
 
 #main nav label {
