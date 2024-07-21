@@ -310,3 +310,138 @@ nav ul button:hover {
 .ser:nth-child(3) h2 {
   background-color: #ffffff;
 }
+
+/* page 3-------------------------------------------------------------------------------------------------  */
+#page3 {
+  width: 88%;
+  margin: auto;
+  min-height: 99vh;
+  padding: 40px 20px 100px 20px;
+}
+
+#page3Container {
+  margin-top: 1rem;
+  background-color: #e5e5e5;
+  padding: 35px 45px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#page3Container .left {
+  width: 60%;
+}
+
+#page3Container .right {
+  display: flex;
+  justify-content: end;
+  width: 30%;
+}
+
+#page3Container .right img {
+  width: 75%;
+  margin-right: 1rem;
+}
+
+#page3Container .left h2 {
+  font-size: 1.2rem;
+  font-family: "Sora";
+}
+
+#page3Container .left p {
+  margin-top: 1rem;
+  color: #1e1e1e;
+}
+
+#page3Container .left button {
+  margin-top: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.65);
+  font-weight: 500;
+  padding: 11px 20px;
+  border-radius: 4px;
+  background-color: #151515;
+  color: #ffffff;
+}
+
+#page3Container .left button:hover {
+  background-color: #b9ff66;
+  color: #151515;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#caseStudy {
+  width: 100%;
+  display: flex;
+  gap: 3vw;
+  justify-content: start;
+  align-items: center;
+  margin-top: 8.5rem;
+}
+
+#caseStudy h1 {
+  font-family: "Sora";
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #b9ff66;
+}
+
+#caseStudy p {
+  width: 47%;
+  font-size: 0.95rem;
+  color: #151515b1;
+  font-weight: 600;
+}
+
+#caseStudyLinks {
+  margin-top: 3rem;
+  background-color: #1e1e1e;
+  padding: 70px 50px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  color: #e5e5e5;
+}
+
+#caseStudyLinks .link1,
+#caseStudyLinks .link2,
+#caseStudyLinks .link3 {
+  width: 30%;
+  padding: 0px 20px;
+}
+
+#caseStudyLinks .link1 {
+  border-right: 1px solid #e5e5e5a9;
+  border-radius: 3px;
+}
+
+#caseStudyLinks .link2 {
+  border-right: 1px solid #e5e5e5a9;
+  border-radius: 3px;
+}
+
+#caseStudyLinks p {
+  font-size: 15.9px;
+  color: #e5e5e5a9;
+}
+
+#caseStudyLinks button {
+  border: none;
+  margin-top: 1.3rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  background-color: transparent;
+  padding: 10px 0px;
+  font-size: 1rem;
+}
+
+#caseStudyLinks button span {
+  font-size: 1.2rem;
+  color: #b9ff66;
+}
