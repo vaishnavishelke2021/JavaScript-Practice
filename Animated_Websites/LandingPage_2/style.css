@@ -28,8 +28,10 @@ html {
 }
 
 #page1 {
-  width: 100%;
+  width: 88%;
+  margin: auto;
   height: 100%;
+  /* position: relative; */
 }
 /* nav-------------------------------------------------------------------------  */
 nav {
@@ -41,7 +43,7 @@ nav {
 }
 
 nav h1 {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: 800;
   display: flex;
   align-items: center;
@@ -49,7 +51,7 @@ nav h1 {
 nav h1 span {
   color: #151515;
   margin-right: 10px;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 }
 
 nav ul {
@@ -82,19 +84,21 @@ nav ul button:hover {
 
 /* container ----------------------------------------------------------------------- */
 #container {
+  margin-top: 1rem;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 25px;
+  padding: 50px 25px;
 }
 
 #container .containerL {
-  width: 37%;
+  width: 45%;
 }
 
 .containerL h1 {
-  font-size: 2.8rem;
+  font-size: 2.7rem;
+  margin-top: 15px;
   font-weight: 500;
   font-family: "Sora";
 }
@@ -104,7 +108,7 @@ nav ul button:hover {
   margin-top: 2rem;
   font-weight: 500;
   line-height: 25px;
-  color: #151515c5;
+  color: #151515ba;
 }
 
 .containerL button {
@@ -127,6 +131,8 @@ nav ul button:hover {
 
 #container .containerR {
   width: 45%;
+  display: flex;
+  justify-content: end;
 }
 
 .containerR img {
@@ -137,9 +143,10 @@ nav ul button:hover {
 
 /* companyLogos --------------------------------------------------------------------  */
 #companyLogos {
-  width: 85%;
+  /* background-color: saddlebrown; */
+  width: 63%;
   margin: auto;
-  padding: 60px 0px 40px 0px;
+  padding: 40px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -147,43 +154,45 @@ nav ul button:hover {
 
 #companyLogos img {
   opacity: 80%;
-  height: 50px;
+  height: 40px;
   width: auto;
 }
 
 #companyLogos img:nth-child(2) {
-  height: 90px;
-  margin-top: -15px;
-}
-
-#companyLogos img:nth-child(3) {
-  height: 70px;
-  margin-top: -15px;
-}
-
-#companyLogos img:nth-child(4) {
-  height: 90px;
-  margin-top: -15px;
-}
-
-#companyLogos img:nth-child(5) {
   height: 80px;
   margin-top: -15px;
 }
 
+#companyLogos img:nth-child(3) {
+  height: 60px;
+  margin-top: -15px;
+}
+
+#companyLogos img:nth-child(4) {
+  height: 80px;
+  margin-top: -15px;
+}
+
+#companyLogos img:nth-child(5) {
+  height: 70px;
+  margin-top: -15px;
+}
+
 #companyLogos img:nth-child(6) {
-  height: 30px;
+  height: 20px;
   margin-top: -15px;
 }
 
 /* page 2-------------------------------------------------------------------------------------------------  */
 #page2 {
-  width: 100%;
-  height: 100%;
-  padding: 70px 20px;
+  width: 88%;
+  margin: auto;
+  min-height: 99vh;
+  padding: 80px 20px 40px 20px;
 }
 
 #services {
+  /* margin-top: -40px; */
   width: 100%;
   display: flex;
   gap: 3vw;
@@ -219,8 +228,8 @@ nav ul button:hover {
 }
 
 #servicesContainer .ser {
-  width: 44%;
-  height: 265px;
+  width: 46%;
+  min-height: 240px;
   margin-top: 1rem;
   border-radius: 20px;
   border: 2px solid #151515b1;
