@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:200,300,regular,500,600,700,800,200italic,300italic,italic,500italic,600italic,700italic,800italic);
+@import url(https://fonts.googleapis.com/css?family=Sora:100,200,300,regular,500,600,700,800);
 
 * {
   margin: 0;
@@ -16,13 +17,19 @@ html {
 }
 
 ::selection {
-  background-color: rgb(85, 154, 85);
+  background-color: #b9ff66;
   color: #ffffff;
 }
 
 .wrapper {
+  height: 100%;
   width: 90%;
   margin: auto;
+}
+
+#page1 {
+  width: 100%;
+  height: 100%;
 }
 /* nav-------------------------------------------------------------------------  */
 nav {
@@ -40,7 +47,7 @@ nav h1 {
   align-items: center;
 }
 nav h1 span {
-  color: rgb(85, 154, 85);
+  color: #151515;
   margin-right: 10px;
   font-size: 1.7rem;
 }
@@ -54,7 +61,7 @@ nav ul {
 }
 nav ul li:hover {
   cursor: pointer;
-  color: rgb(85, 154, 85);
+  color: #151515b1;
   transition: all 0.2s;
 }
 
@@ -66,9 +73,104 @@ nav ul button {
   background-color: transparent;
 }
 nav ul button:hover {
-  background-color: rgb(85, 154, 85);
+  background-color: #151515;
   color: white;
   border: 1px solid transparent;
   cursor: pointer;
   transition: all 0.2s;
+}
+
+/* container ----------------------------------------------------------------------- */
+#container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 90px 25px;
+}
+
+#container .containerL {
+  width: 37%;
+}
+
+.containerL h1 {
+  font-size: 2.8rem;
+  font-weight: 500;
+  font-family: "Sora";
+}
+
+.containerL p {
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  font-weight: 500;
+  line-height: 25px;
+  color: #151515c5;
+}
+
+.containerL button {
+  margin-top: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.65);
+  font-weight: 500;
+  padding: 11px 20px;
+  border-radius: 4px;
+  background-color: #151515;
+  color: #ffffff;
+}
+
+.containerL button:hover {
+  background-color: #b9ff66;
+  color: #151515;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#container .containerR {
+  width: 45%;
+}
+
+.containerR img {
+  width: 88%;
+  height: auto;
+}
+
+/* companyLogos --------------------------------------------------------------------  */
+#companyLogos {
+  /* width: 90%; */
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#companyLogos img {
+  opacity: 80%;
+  height: 50px;
+  width: auto;
+}
+
+#companyLogos img:nth-child(2) {
+  height: 90px;
+  margin-top: -15px;
+}
+
+#companyLogos img:nth-child(3) {
+  height: 70px;
+  margin-top: -15px;
+}
+
+#companyLogos img:nth-child(4) {
+  height: 90px;
+  margin-top: -15px;
+}
+
+#companyLogos img:nth-child(5) {
+  height: 80px;
+  margin-top: -15px;
+}
+
+#companyLogos img:nth-child(6) {
+  height: 30px;
+  margin-top: -15px;
 }
