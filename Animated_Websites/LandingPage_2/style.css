@@ -24,3 +24,51 @@ html {
   width: 90%;
   margin: auto;
 }
+/* nav-------------------------------------------------------------------------  */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+nav h1 {
+  font-size: 1.7rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+}
+nav h1 span {
+  color: rgb(85, 154, 85);
+  margin-right: 10px;
+  font-size: 1.7rem;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  list-style-type: none;
+  font-weight: 600;
+}
+nav ul li:hover {
+  cursor: pointer;
+  color: rgb(85, 154, 85);
+  transition: all 0.2s;
+}
+
+nav ul button {
+  border: 1px solid rgba(0, 0, 0, 0.65);
+  font-weight: 500;
+  padding: 7px 20px;
+  border-radius: 4px;
+  background-color: transparent;
+}
+nav ul button:hover {
+  background-color: rgb(85, 154, 85);
+  color: white;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+}
