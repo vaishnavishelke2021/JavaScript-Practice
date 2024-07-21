@@ -234,7 +234,7 @@ tl3.from("#caseStudyLinks .linkdiv", {
   scrollTrigger: {
     trigger: "#caseStudyLinks .linkdiv",
     scroller: "body",
-    markers: true,
+    // markers: true,
     start: "top 80%",
     end: "top 60%",
     scrub: 1,

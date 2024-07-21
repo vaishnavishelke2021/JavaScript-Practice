@@ -445,3 +445,17 @@ nav ul button:hover {
   font-size: 1.2rem;
   color: #b9ff66;
 }
+
+/* footer =============================================================================  */
+footer {
+  width: 100%;
+  background-color: #b9ff66;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 14px;
+  color: #1e1e1e;
+  font-weight: 500;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
