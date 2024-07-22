@@ -33,6 +33,18 @@ html {
   height: 100%;
   /* position: relative; */
 }
+
+@media only screen and (max-width: 1000px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  #page1 {
+    width: 98%;
+    height: fit-content;
+  }
+}
+
 /* nav-------------------------------------------------------------------------  */
 nav {
   width: 100%;
@@ -82,17 +94,32 @@ nav ul button:hover {
   transition: all 0.2s;
 }
 
+nav i {
+  display: none;
+}
+
+@media only screen and (max-width: 820px) {
+  nav ul {
+    display: none;
+  }
+
+  nav i {
+    display: block;
+  }
+}
+
 /* container ----------------------------------------------------------------------- */
 #container {
   margin-top: 1rem;
   width: 100%;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 50px 25px;
 }
 
-#container .containerL {
+.containerL {
   width: 45%;
 }
 
@@ -129,26 +156,65 @@ nav ul button:hover {
   transition: all 0.2s;
 }
 
-#container .containerR {
+.containerR {
   width: 45%;
   display: flex;
   justify-content: end;
 }
 
 .containerR img {
+  display: block;
   margin-top: 20px;
   width: 80%;
   height: auto;
 }
 
+@media only screen and (max-width: 820px) {
+  .containerL h1 {
+    font-size: 1.7rem;
+  }
+
+  .containerL p {
+    font-size: 15px;
+    margin-top: 1rem;
+  }
+}
+
+.containerL button {
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 550px) {
+  #container {
+    flex-direction: column;
+    display: block;
+    padding: 20px 30px;
+    width: 100%;
+  }
+  .containerL {
+    width: 100%;
+    /* margin: auto; */
+  }
+
+  .containerR {
+    width: 100%;
+    /* margin: auto; */
+  }
+  .containerR img {
+    display: none;
+  }
+}
+
 /* companyLogos --------------------------------------------------------------------  */
 #companyLogos {
   /* background-color: saddlebrown; */
-  width: 63%;
+  width: 65%;
   margin: auto;
   padding: 40px 0px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1vw;
   align-items: center;
 }
 
@@ -158,18 +224,14 @@ nav ul button:hover {
   width: auto;
 }
 
-#companyLogos img:nth-child(2) {
+#companyLogos img:nth-child(2),
+#companyLogos img:nth-child(4) {
   height: 80px;
   margin-top: -15px;
 }
 
 #companyLogos img:nth-child(3) {
   height: 60px;
-  margin-top: -15px;
-}
-
-#companyLogos img:nth-child(4) {
-  height: 80px;
   margin-top: -15px;
 }
 
@@ -181,6 +243,38 @@ nav ul button:hover {
 #companyLogos img:nth-child(6) {
   height: 20px;
   margin-top: -15px;
+}
+
+@media only screen and (max-width: 550px) {
+  #companyLogos {
+    width: 100%;
+  }
+
+  #companyLogos img {
+    height: 20px;
+    margin-top: -10px;
+  }
+
+  #companyLogos img:nth-child(2),
+  #companyLogos img:nth-child(4) {
+    height: 45px;
+    margin-top: -18px;
+  }
+
+  #companyLogos img:nth-child(3) {
+    height: 40px;
+    margin-top: -15px;
+  }
+
+  #companyLogos img:nth-child(5) {
+    height: 40px;
+    margin-top: -15px;
+  }
+
+  #companyLogos img:nth-child(6) {
+    height: 13px;
+    margin-top: -15px;
+  }
 }
 
 /* page 2-------------------------------------------------------------------------------------------------  */
@@ -311,6 +405,101 @@ nav ul button:hover {
   background-color: #ffffff;
 }
 
+@media only screen and (max-width: 550px) {
+  #page2 {
+    width: 100%;
+    height: fit-content;
+    padding: 30px 30px 0px 30px;
+  }
+
+  #services {
+    padding-top: 3rem;
+    padding-bottom: 0px;
+  }
+
+  #services h1 {
+    font-size: 1.1rem;
+  }
+
+  #services p {
+    width: 100%;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@media only screen and (max-width: 1363px) {
+  .ser1 {
+    width: 60%;
+  }
+  .ser1 button {
+    padding: 5px 14px;
+    font-size: 0.8rem;
+    gap: 7px;
+  }
+
+  .ser1 button span {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+  }
+
+  .ser2 {
+    width: 40%;
+  }
+
+  .ser2 img {
+    scale: 1;
+  }
+
+  .ser h2 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  #servicesContainer .ser {
+    width: 46%;
+    min-height: 240px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+  }
+
+  .ser1 {
+    width: 100%;
+    height: fit-content;
+    padding: 0px 0px 20px 0px;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+  }
+  .ser2 {
+    width: 100%;
+    /* margin: auto; */
+  }
+
+  .ser2 img {
+    scale: 3;
+    width: fit-content;
+    margin-left: 1rem;
+  }
+
+  .ser1 button {
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #servicesContainer .ser {
+    width: 100%;
+  }
+
+  #servicesContainer {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
 /* page 3-------------------------------------------------------------------------------------------------  */
 #page3 {
   width: 88%;
@@ -342,6 +531,7 @@ nav ul button:hover {
 #page3Container .right img {
   width: 75%;
   margin-right: 1rem;
+  display: block;
 }
 
 #page3Container .left h2 {
@@ -444,6 +634,94 @@ nav ul button:hover {
 #caseStudyLinks button span {
   font-size: 1.2rem;
   color: #b9ff66;
+}
+
+@media only screen and (max-width: 800px) {
+  #caseStudyLinks p {
+    font-size: 14px;
+    color: #e5e5e5a9;
+  }
+
+  #caseStudyLinks button {
+    font-size: 13px;
+  }
+  #caseStudyLinks button span {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #caseStudyLinks {
+    margin-top: 3rem;
+    background-color: #1e1e1e;
+    padding: 70px 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #e5e5e5;
+  }
+
+  #caseStudyLinks .link1,
+  #caseStudyLinks .link2,
+  #caseStudyLinks .link3 {
+    width: 90%;
+    margin: auto;
+    padding: 10px 0px;
+    margin-top: 1rem;
+  }
+
+  #caseStudyLinks button {
+    margin-top: 1px;
+  }
+
+  #caseStudyLinks .link1 {
+    border-right: none;
+    border-bottom: 1px solid #e5e5e5a9;
+    border-radius: 3px;
+  }
+
+  #caseStudyLinks .link2 {
+    border-right: none;
+    border-bottom: 1px solid #e5e5e5a9;
+    border-radius: 3px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #page3Container {
+    justify-content: center;
+  }
+  #page3 {
+    width: 100%;
+  }
+
+  #page3Container .left {
+    width: 100%;
+  }
+
+  #page3Container .right {
+    width: 0;
+  }
+
+  #page3Container .right img {
+    display: none;
+  }
+
+  #caseStudy h1 {
+    font-size: 1.1rem;
+  }
+
+  #caseStudy p {
+    width: 100%;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  #caseStudy {
+    padding: 20px;
+  }
 }
 
 /* footer =============================================================================  */
