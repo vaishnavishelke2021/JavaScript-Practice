@@ -215,7 +215,7 @@ nav h4:nth-child(4) {
 /* Alphabets =================================================================================  */
 #alphabets {
   height: 11vh;
-  margin: 2rem 0rem;
+  margin: 1.5rem 0rem;
   border-top: 2px solid #161616;
   border-bottom: 2px solid #161616;
   display: flex;
@@ -226,7 +226,7 @@ nav h4:nth-child(4) {
 }
 
 #alphabets h4 {
-  margin-right: 10px;
+  margin-right: 26px;
   font-size: 1.7vw;
   border-bottom: 2px solid #161616;
   font-weight: 400;
@@ -250,4 +250,69 @@ nav h4:nth-child(4) {
   cursor: pointer;
   background-color: rgba(255, 0, 0, 0.225);
   transition: all 0.2s;
+}
+
+/* page 2==================================================================  */
+#page2 {
+  width: 100%;
+  height: 100%;
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 7vw;
+}
+
+#page2-part1 {
+  width: 55%;
+  height: 90%;
+}
+
+#page2-part1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#page2-part2 {
+  width: 40%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#page2-part2 img {
+  width: 100%;
+  object-fit: cover;
+  height: 77%;
+}
+
+#part2-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+#part2-info pre {
+  width: 45%;
+  letter-spacing: -1px;
+  font-weight: 600;
+  font-size: 1.3vw;
+  line-height: 25px;
+}
+
+#part2-info p {
+  width: 48%;
+  display: flex;
+  line-height: 18px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.7px;
+}
+
+#vogueHeading {
+  padding: 0vw 7vw;
+  margin-top: -3.5rem;
+  font-size: 2vw;
+  font-family: "Rowdies";
+  font-weight: 900;
 }
