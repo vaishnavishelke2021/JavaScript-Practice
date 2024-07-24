@@ -20,12 +20,12 @@ body {
   color: #f7f9f7;
 }
 
-::-webkit-scrollbar{
-    width: 5px;
+::-webkit-scrollbar {
+  width: 5px;
 }
-::-webkit-scrollbar-thumb{
-    background-color: #161616;
-    border-radius: 50px;
+::-webkit-scrollbar-thumb {
+  background-color: #161616;
+  border-radius: 50px;
 }
 
 #main {
@@ -210,4 +210,44 @@ nav h4:nth-child(4) {
   font-family: "Poppins";
   font-weight: 600;
   font-size: 0.9vw;
+}
+
+/* Alphabets =================================================================================  */
+#alphabets {
+  height: 11vh;
+  margin: 2rem 0rem;
+  border-top: 2px solid #161616;
+  border-bottom: 2px solid #161616;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3vw;
+}
+
+#alphabets h4 {
+  margin-right: 10px;
+  font-size: 1.7vw;
+  border-bottom: 2px solid #161616;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-style: italic;
+}
+
+#alphabets h6 {
+  font-size: 1.1vw;
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, 0.14);
+  color: #161616c4;
+  width: 1vw;
+  height: 1vw;
+  border-radius: 50%;
+  font-style: italic;
+}
+
+#alphabets h6:hover {
+  color: #161616;
+  cursor: pointer;
+  background-color: rgba(255, 0, 0, 0.225);
+  transition: all 0.2s;
 }
