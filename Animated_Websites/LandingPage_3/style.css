@@ -60,6 +60,19 @@ nav h1 {
   width: 20%;
   font-family: "Rowdies";
   letter-spacing: -3px;
+  position: relative;
+}
+
+nav h1::after {
+  content: "model management";
+  position: absolute;
+  bottom: -5%;
+  right: 38%;
+  letter-spacing: -0.1px;
+  display: flex;
+  font-size: 10px;
+  font-weight: 500;
+  font-family: "Poppins";
 }
 
 nav h1 sup {
