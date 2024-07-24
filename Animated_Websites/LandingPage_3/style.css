@@ -664,3 +664,42 @@ nav h4:nth-child(4) {
     transform: translateX(-100%);
   }
 }
+
+/* page 9 ========================================================================================  */
+#page9 {
+  width: 100%;
+  height: 59vh;
+  padding: 7vh 7vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+#page9 h1 {
+  width: 12%;
+  font-size: 2.3vw;
+  letter-spacing: -2px;
+  font-family: "Rowdies";
+  font-weight: 800;
+}
+
+#blog1,
+#blog2 {
+  width: 40%;
+}
+
+#blog1 img,
+#blog2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 15% 15%;
+}
+
+#blog1 p,
+#blog2 p {
+  height: 40%;
+  font-size: 1.3vw;
+  font-weight: 500;
+  letter-spacing: -1px;
+  line-height: 33px;
+}
