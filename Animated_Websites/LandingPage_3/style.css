@@ -668,7 +668,7 @@ nav h4:nth-child(4) {
 /* page 9 ========================================================================================  */
 #page9 {
   width: 100%;
-  height: 59vh;
+  height: 70vh;
   padding: 7vh 7vw;
   display: flex;
   justify-content: space-between;
@@ -687,6 +687,11 @@ nav h4:nth-child(4) {
   width: 40%;
 }
 
+#blog1 div,
+#blog2 div {
+  height: 60%;
+}
+
 #blog1 img,
 #blog2 img {
   width: 100%;
@@ -702,4 +707,20 @@ nav h4:nth-child(4) {
   font-weight: 500;
   letter-spacing: -1px;
   line-height: 33px;
+}
+
+/* footer =====================================================  */
+footer {
+  width: 100%;
+  height: 65%;
+  /* background-color: firebrick; */
+  padding: 17vh 0vw 7vh 0vw;
+}
+
+footer div {
+  width: 100%;
+  height: 100%;
+  padding: 0 7vw;
+  border-top: 1.6px solid #161616;
+  border-bottom: 1.6px solid #161616;
 }
