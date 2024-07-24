@@ -401,3 +401,81 @@ nav h4:nth-child(4) {
   object-fit: cover;
   object-position: 20% 20%;
 }
+
+/* page5 =========================================================================  */
+#page5 {
+  width: 100%;
+  height: 100%;
+  padding: 3vw 7vw;
+  font-family: "Poppins";
+}
+
+#page5 h1 {
+  text-align: center;
+  font-family: "Rowdies";
+  font-weight: 900;
+  font-size: 2.6vw;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+
+#updates {
+  width: 100%;
+  margin-top: 3rem;
+  padding: 3vh 8vw;
+}
+
+#updates .update {
+  height: 15vh;
+  border-top: 2px solid #161616;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 4vw 2vh 4vw;
+}
+
+.update div {
+  width: 34%;
+}
+
+.UpdateImage,
+.UpdateText {
+  width: 20%;
+  padding-left: 3rem;
+}
+
+.UpdateText h2 {
+  font-size: 1.9vw;
+  font-weight: 500;
+}
+
+.UpdateImage img {
+  width: 100px;
+  height: 85px;
+  margin-top: 13px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.update h5 {
+  text-transform: uppercase;
+  font-size: 1vw;
+  font-weight: 500;
+  line-height: 16px;
+  width: 5%;
+}
+.update .name {
+  font-size: 2vw;
+  font-weight: 500;
+}
+.update div p,
+.UpdateText p {
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-top: -5px;
+  font-weight: 500;
+}
+
+#updates .update:nth-last-child(1) {
+  border-bottom: 2px solid #161616;
+}
