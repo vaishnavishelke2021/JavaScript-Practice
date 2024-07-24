@@ -153,3 +153,53 @@ nav h4:nth-child(4) {
 #overlay .lower img {
   height: 3rem;
 }
+
+/* Moving images ===================================================================================================  */
+#movingImgs {
+  margin-top: 3.5rem;
+  height: 35vh;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#movingImgs .container {
+  height: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  animation: anime 10s linear;
+  animation-iteration-count: infinite;
+}
+@keyframes anime {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#movingImgs .container .imgname {
+  height: 100%;
+  padding: 1vw;
+  text-align: center;
+}
+
+#movingImgs .container .imgname img {
+  width: 9vw;
+  height: 19vh;
+  object-fit: cover;
+  object-position: 20% 20%;
+  border-radius: 50%;
+}
+
+#movingImgs .container .imgname h6 {
+  margin-top: 8px;
+  color: #161616;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 0.9vw;
+}
