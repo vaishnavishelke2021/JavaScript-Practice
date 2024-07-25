@@ -10,13 +10,23 @@ body {
   width: 100%;
   color: #f2f2f2;
   font-family: "Plain Light";
+  background-color: #0b0b0b;
+}
+
+::selection {
+  background-color: #f2f2f2;
+  color: #000;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
 }
 
 /* loader =======================================  */
 #loader {
   width: 100%;
   height: 100%;
-  background-color: #0b0b0b;
+  background-color: #050505;
   position: fixed;
   z-index: 500;
   padding: 10vh 10vw;
@@ -29,11 +39,73 @@ body {
 .line {
   height: fit-content;
   margin-top: -10px;
+  overflow: hidden;
 }
 
 .line h1 {
-  font-size: 6.7vw;
+  font-size: 6.5vw;
   font-weight: 600;
+}
+
+#line1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
+  padding-left: 4vw;
+}
+
+.counting {
+  display: flex;
+  gap: 0.3vw;
+}
+.count {
+  width: 5rem;
+}
+.counting h5 {
+  font-size: 3.1vw;
+  font-family: "Silk Serif";
+  font-weight: 200;
+  font-style: italic;
+  margin-top: -33px;
+}
+
+#line3 {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+#line3 h2 {
+  font-size: 6.5vw;
+  animation: nowAnim 2s 0.01s infinite;
+}
+@keyframes nowAnim {
+  0% {
+    font-style: normal;
+    font-family: "Plain Light";
+    opacity: 1;
+  }
+  47% {
+    font-family: "silk serif";
+    font-style: italic;
+    padding-right: 3rem;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    opacity: 0;
+  }
+  50% {
+    font-style: normal;
+    font-family: "Plain Light";
+    opacity: 1;
+  }
+  100% {
+    font-family: "silk serif";
+    font-style: italic;
+    padding-right: 3rem;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    opacity: 0;
+  }
 }
 /* main =========================================  */
 #main {
