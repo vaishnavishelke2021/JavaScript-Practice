@@ -134,7 +134,7 @@ nav #logo {
 
 nav #nav-middle {
   width: 20%;
-  margin-left: -38vw;
+  margin-left: -33vw;
 }
 
 nav #nav-middle h5,
@@ -150,4 +150,51 @@ nav #nav-end {
   justify-content: center;
   align-items: center;
   gap: 2.5vw;
+}
+
+/* hero sec--------------------------------------------------  */
+#hero-sec {
+  width: 70%;
+  margin-top: 3.5rem;
+  position: relative;
+}
+
+#hero-sec::before {
+  content: "01";
+  font-family: "silk serif";
+  font-size: 3.5vw;
+  font-weight: 300;
+  position: absolute;
+  top: 2%;
+  left: 23%;
+}
+
+.hero {
+  height: fit-content;
+  margin-top: -10px;
+  margin-left: 25rem;
+  overflow: hidden;
+}
+
+.hero h1 {
+  font-size: 6.5vw;
+  font-weight: 600;
+}
+
+#hero-3 h1 {
+  display: flex;
+}
+
+#hero-3 h1 span:nth-child(1),
+#hero-3 h1 span:nth-child(3) {
+  border-bottom: 7px solid white;
+}
+
+#hero-3 h1 span:nth-child(1):hover,
+#hero-3 h1 span:nth-child(3):hover {
+  border-bottom: 7px solid transparent;
+  -webkit-text-stroke: 0.0001px white;
+  font-family: "plain light";
+  transition: all 0.3s;
+  color: transparent;
 }

@@ -52,3 +52,21 @@ tl.from("#page1", {
 tl.to("#loader", {
   display: "none",
 });
+
+tl.from("nav", {
+  y: 30,
+  opacity: 0,
+  duration: 0.4,
+  delay: 0.1,
+});
+
+tl.from(
+  ".hero h1",
+  {
+    y: 110,
+    duration: 0.4,
+    delay: 0.2,
+    stagger: 0.15,
+  },
+  "-=0.8"
+);
