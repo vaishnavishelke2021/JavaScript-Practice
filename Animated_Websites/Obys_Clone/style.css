@@ -76,7 +76,7 @@ body {
   gap: 2rem;
 }
 #line3 h2 {
-  font-size: 6.5vw;
+  font-size: 5vw;
   animation: nowAnim 2s 0.01s infinite;
 }
 @keyframes nowAnim {
