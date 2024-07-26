@@ -119,3 +119,35 @@ body {
   height: 100vh;
   background-color: #151515;
 }
+
+/* nav ------------------- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 6vh 5vw;
+}
+
+nav #logo {
+  width: 20%;
+}
+
+nav #nav-middle {
+  width: 20%;
+  margin-left: -38vw;
+}
+
+nav #nav-middle h5,
+nav #nav-end h5 {
+  font-weight: 300;
+  line-height: 17px;
+  font-family: "plain";
+  font-size: 15.5px;
+}
+
+nav #nav-end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5vw;
+}
