@@ -70,3 +70,20 @@ tl.from(
   },
   "-=0.8"
 );
+
+// cursor--------------------------
+function cursorAnimation() {
+  document.addEventListener("mousemove", function (dets) {
+    gsap.to("#cursor", {
+      left: dets.x,
+      top: dets.y,
+      ease: "back.out",
+    });
+  });
+
+  Shery.makeMagnet("#nav-end h5", {
+    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    duration: 1,
+  });
+}
+cursorAnimation();

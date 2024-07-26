@@ -198,3 +198,16 @@ nav #nav-end {
   transition: all 0.3s;
   color: transparent;
 }
+
+/* cursor--------------------------------  */
+#cursor {
+  width: 33px;
+  height: 33px;
+  position: fixed;
+  z-index: 1000;
+  /* background-color: white; */
+  border: 1.5px solid rgba(255, 255, 255, 0.814);
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+}
