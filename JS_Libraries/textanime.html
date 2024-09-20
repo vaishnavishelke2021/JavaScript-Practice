@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typed.js Animations</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #282c34;
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+      .typed-output {
+        overflow: hidden;
+        font-size: 24px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="typed-output" id="typed1"></div>
+
+    <!-- <script>
+      // First animation
+      new Typed("#typed1", {
+        strings: ["Welcome to My Website!"],
+        typeSpeed: 50,
+        backSpeed: 25,
+        loop: true,
+      });
+    </script> -->
+
+    <!-- <script>
+      new Typed("#typed1", {
+        strings: [
+          "Welcome to My Website!",
+          "Enjoy Your Stay!",
+          "Explore the Content!",
+        ],
+        typeSpeed: 50,
+        backSpeed: 25,
+        loop: true,
+        onStart: (self) => {
+          document.querySelector("#typed1").style.color = getRandomColor();
+        },
+        onStringTyped: (pos, self) => {
+          document.querySelector("#typed1").style.color = getRandomColor();
+        },
+      });
+
+      function getRandomColor() {
+        const letters = "0123456789ABCDEF";
+        let color = "#";
+        for (let i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+    </script> -->
+
+    <!-- <script>
+        new Typed('#typed1', {
+            strings: ["Get Started", "Learn New Skills", "Become a Pro!"],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true,
+            backDelay: 1000, // Delay before starting to erase
+            startDelay: 500  // Delay before typing starts
+        });
+    </script> -->
+
+    <!-- <audio id="typingSound" src="https://www.soundjay.com/button/sounds/button-10.mp3"></audio>
+
+<script>
+    const typingSound = document.getElementById('typingSound');
+
+    new Typed('#typed1', {
+        strings: ["JavaScript Animations", "Using Typed.js", "It's Fun!"],
+        typeSpeed: 70,
+        backSpeed: 30,
+        loop: true,
+        onStart: () => typingSound.play(),
+        onStringTyped: () => typingSound.play()
+    });
+</script> -->
+
+    <!-- <style>
+      .typed-cursor {
+        font-size: 2em; /* Change cursor size */
+        color: #ff5733; /* Custom cursor color */
+      }
+    </style>
+
+    <script>
+      new Typed("#typed1", {
+        strings: ["Get Started", "Learn New Skills", "Become a Pro!"],
+        typeSpeed: 100,
+        backSpeed: 50,
+        loop: true,
+        cursorChar: "|", // Custom cursor character
+        showCursor: true,
+      });
+    </script> -->
+
+    
+</body>
+</html>

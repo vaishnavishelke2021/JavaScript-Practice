@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced AOS Animation Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #4a4a4a;
+        }
+        p {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #666;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .card {
+            background: linear-gradient(135deg, #6e7efc, #b3c7ff);
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            color: white;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px) rotate(2deg);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        .card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transition: transform 0.3s;
+            z-index: 0;
+            opacity: 0.5;
+        }
+        .card:hover::before {
+            transform: scale(1.5);
+        }
+        h2 {
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+        p {
+            color: #ffffff;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to Our Services</h1>
+    <p>Scroll down to see our offerings with advanced animations!</p>
+
+    <div class="container">
+        <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+            <h2>Service One</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+            <h2>Service Two</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+            <h2>Service Three</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
+            <h2>Service Four</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,  // Duration of the animations
+            easing: 'ease-in-out',
+            once: true,      // Whether to animate only once
+            mirror: false    // Whether elements should animate out on scroll
+        });
+    </script>
+</body>
+</html>
