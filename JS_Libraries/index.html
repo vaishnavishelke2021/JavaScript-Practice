@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+    <style>
+      /* Basic hamburger button styling */
+      .hamburger {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background-color: #333;
+        position: relative;
+      }
+
+      .hamburger div {
+        width: 100%;
+        height: 5px;
+        background-color: white;
+        margin: 4px 0;
+      }
+
+      /* Simple menu styling */
+      .menu {
+        display: none;
+        background-color: #f4f4f4;
+        padding: 20px;
+        margin-top: 10px;
+      }
+
+      .menu.open {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <figure>
+      <img
+        width="400px"
+        src="https://5.imimg.com/data5/SELLER/Default/2023/9/342629811/UJ/JK/ME/20619026/radha-krishna-cow-parrot-2x.jpg"
+        alt="A beautiful sunset over the mountains"
+      />
+      <img
+        width="400px"
+        src="https://5.imimg.com/data5/SELLER/Default/2023/9/342629811/UJ/JK/ME/20619026/radha-krishna-cow-parrot-2x.jpg"
+        alt="A beautiful sunset over the mountains"
+      />
+
+      <figcaption>Grouped Image using figure tage</figcaption>
+    </figure>
+
+    <br />
+    <br />
+
+    <figure>
+      <pre><code class="language-javascript">
+          function sayHello() {
+            console.log("Hello, World!");
+          }
+          sayHello();
+        </code></pre>
+      <figcaption>
+        This JavaScript function prints "Hello, World!" to the console.
+      </figcaption>
+    </figure>
+
+    <br />
+    <br />
+
+    <audio controls>
+      <source
+        src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+
+    <br />
+    <br />
+
+    <!-- Hamburger button -->
+    <div class="hamburger" id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-- Menu that opens on click -->
+    <div class="menu" id="menu">
+      <p>This is the menu content!</p>
+    </div>
+
+    <!-- Audio elements for the drum sound -->
+    <audio
+      id="openAudio"
+      src="https://www.fesliyanstudios.com/play-mp3/4385"
+    ></audio>
+    <audio
+      id="closeAudio"
+      src="https://www.fesliyanstudios.com/play-mp3/4387"
+    ></audio>
+
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const menu = document.getElementById("menu");
+      const openAudio = document.getElementById("openAudio");
+      const closeAudio = document.getElementById("closeAudio");
+
+      let menuOpen = false;
+
+      hamburger.addEventListener("click", () => {
+        if (menuOpen) {
+          // Play closing audio
+          closeAudio.play();
+          menu.classList.remove("open");
+        } else {
+          // Play opening audio
+          openAudio.play();
+          menu.classList.add("open");
+        }
+        menuOpen = !menuOpen;
+      });
+    </script>
+  </body>
+</html>
